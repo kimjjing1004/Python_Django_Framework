@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>글작성</title>
+    <script>
+        function backToList(obj) {
+            obj.action = "{% url 'noticeboard:index' %}";
+            obj.submit();
+        }
+    </script>
 </head>
 <body>
   <h1 style="text-align:center">새글 쓰기</h1>
@@ -16,8 +22,8 @@
             </tr>
             <tr>
                 <td align="right" valign="top"><br>글내용:</td>
-                <td colspan="2"><texrarea name="context" rows="10" cols="65" maxlength="1900">
-                </texrarea></td>
+                <td colspan="2"><textarea name="content" rows="10" cols="65" maxlength="1900">
+                </textarea></td>
             </tr>
             <tr>
                 <td align="right"></td>
@@ -28,7 +34,6 @@
             </tr>
           </tbody>
       </table>
-
   </form>
 </body>
 </html>
