@@ -14,6 +14,9 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import pymysql
+from pathlib import Path
+
+import pymysql
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
